@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		817B268320747E900082E5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B268220747E900082E5F8 /* AppDelegate.swift */; };
-		817B268520747E900082E5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B268420747E900082E5F8 /* ViewController.swift */; };
+		817B268520747E900082E5F8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B268420747E900082E5F8 /* MainVC.swift */; };
 		817B268820747E900082E5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B268620747E900082E5F8 /* Main.storyboard */; };
 		817B268A20747E920082E5F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817B268920747E920082E5F8 /* Assets.xcassets */; };
 		817B268D20747E920082E5F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B268B20747E920082E5F8 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		817B267F20747E900082E5F8 /* SwaggerHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwaggerHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817B268220747E900082E5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		817B268420747E900082E5F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		817B268420747E900082E5F8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		817B268720747E900082E5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		817B268920747E920082E5F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		817B268C20747E920082E5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				817B268220747E900082E5F8 /* AppDelegate.swift */,
-				817B268420747E900082E5F8 /* ViewController.swift */,
-				817B268620747E900082E5F8 /* Main.storyboard */,
 				817B268920747E920082E5F8 /* Assets.xcassets */,
-				817B268B20747E920082E5F8 /* LaunchScreen.storyboard */,
-				817B268E20747E920082E5F8 /* Info.plist */,
+				817B26B120747EF70082E5F8 /* Main */,
+				817B26B020747EE20082E5F8 /* Misc */,
 			);
 			path = SwaggerHub;
 			sourceTree = "<group>";
@@ -123,6 +121,24 @@
 				817B26A420747E920082E5F8 /* Info.plist */,
 			);
 			path = SwaggerHubUITests;
+			sourceTree = "<group>";
+		};
+		817B26B020747EE20082E5F8 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				817B268B20747E920082E5F8 /* LaunchScreen.storyboard */,
+				817B268E20747E920082E5F8 /* Info.plist */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		817B26B120747EF70082E5F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				817B268420747E900082E5F8 /* MainVC.swift */,
+				817B268620747E900082E5F8 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817B268520747E900082E5F8 /* ViewController.swift in Sources */,
+				817B268520747E900082E5F8 /* MainVC.swift in Sources */,
 				817B268320747E900082E5F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AN66X2S3W9;
-				INFOPLIST_FILE = SwaggerHub/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwaggerHub/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AN66X2S3W9;
-				INFOPLIST_FILE = SwaggerHub/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwaggerHub/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
